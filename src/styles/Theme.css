@@ -10,3 +10,11 @@
     opacity: 1;
   }
 }
+
+.placeholder-black-css::placeholder{
+  font-weight: bold;
+}
+
+.bg-gradient-def {
+  background-image: linear-gradient(to right top, #070707, #0a0a0a, #0d0d0d, #0f0f0f, #111111, #131313, #151515, #171717, #191919, #1b1b1b, #1e1e1e, #202020);
+}
