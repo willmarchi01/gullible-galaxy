@@ -9,13 +9,13 @@ export const Hero = () => {
     const [openModal, setOpenModal] = useState(false);
 
     return (
-        <div className="h-screen text-white px-3">
+        <div className="text-white px-3 h-screen">
             <div className="max-w-screen-2xl h-screen m-auto flex flex-col gap-12 justify-center items-center leading-relaxed">
                 <h1 className="text-[#fffaf4] text-5xl text-center max-w-6xl font-bold md:text-7xl">
-                    Criando soluções de <TextEffect1 text="Software"/> que estão anos-luz a frente
+                    Criando soluções de <TextEffect1 text="Software"/> que estão anos-luz a frente.
                 </h1>
                 <h2 className="text-[#ff5757] text-2xl text-center">
-                    Focados em transformar suas ideias em constelações de código
+                    Focados em transformar suas ideias em constelações de código.
                 </h2>
                 <div className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10">
                     <button 
