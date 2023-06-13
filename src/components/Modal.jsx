@@ -1,5 +1,5 @@
 import '../styles/Theme.css'
-import ButtonRotatingBackgroundGradient1 from './Hero/Button';
+import { ContactUs } from './ContactForm/ContactUs';
 
 export const Modal = ({ closeModal }) => {
   return (
@@ -21,30 +21,7 @@ export const Modal = ({ closeModal }) => {
                     <span>Suporte ao Cliente 24/7</span>
                 </div>
             </div>
-            <div className="flex flex-col gap-3 md:w-1/2">
-                <h1 className='text-center text-xl font-bold md:text-2xl'>Um pequeno passo para você, um grande passo para o seu negócio.</h1>
-                <form action="" className='flex flex-col items-center justify-center w-full gap-2'>
-                    <input 
-                        type="email" 
-                        placeholder='E-mail para contato' 
-                        className='w-4/5 p-4 rounded-xl text-gray-500 font-bold text-center bg-gray-300 placeholder-black-css placeholder-gray-500'
-                    />
-                    <input 
-                        type="tel" 
-                        placeholder='Número para contato' 
-                        className='w-4/5 p-4 rounded-xl text-gray-500 font-bold text-center bg-gray-300 placeholder-black-css placeholder-gray-500'
-                    />
-                    <input 
-                        type="text" 
-                        placeholder='Como podemos te chamar?' 
-                        className='w-4/5 p-4 rounded-xl text-gray-500 font-bold text-center bg-gray-300 placeholder-black-css placeholder-gray-500'
-                    />
-                </form>
-                <ButtonRotatingBackgroundGradient1 
-                    text="Entrar em Contato"
-                    classCSS="relative inline-flex h-14 overflow-hidden rounded-xl p-[1px] w-4/5 m-auto"
-                />
-            </div>
+            <ContactUs />
         </div>
       </div>
     </div>
