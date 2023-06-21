@@ -49,14 +49,15 @@ export const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col gap-3 md:w-1/2">
-      <h1 className="text-center text-xl font-bold md:text-2xl">
+    <div className="flex flex-col gap-5 md:w-1/2">
+      <h1 className="hidden md:flex text-center text-xl font-bold md:text-2xl">
         Um pequeno passo para você, um grande passo para o seu negócio.
       </h1>
       <form
         action=""
         className="flex flex-col items-center justify-center w-full gap-2"
         ref={form}
+        onSubmit={sendEmail}
       >
         <InputSpotlightBorder 
           placeholder="E-mail para contato"
@@ -75,18 +76,19 @@ export const ContactUs = () => {
         />
       </form>
       <button
-        onClick={sendEmail}
-      >
-        <button 
-            className="w-full"
-            onClick={changeMessage}
+          onClick={sendEmail}
+          className="w-full"
         >
-            <ButtonRotatingBackgroundGradient1
-                text={buttonMessage}
-                classCSS="relative inline-flex h-14 overflow-hidden rounded-xl p-[1px] w-4/5 m-auto"
-            />
+          <button
+              className="w-full"
+              onClick={changeMessage}
+          >
+              <ButtonRotatingBackgroundGradient1
+                  text={buttonMessage}
+                  classCSS="relative inline-flex h-14 overflow-hidden rounded-xl p-[1px] w-4/5 m-auto"
+              />
+          </button>
         </button>
-      </button>
       {showConfirmation && (
         <div className="text-center text-green-500 font-bold">
             Envio Concluído!

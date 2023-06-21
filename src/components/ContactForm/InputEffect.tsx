@@ -53,6 +53,7 @@ const InputSpotlightBorder = (props: any) => {
         <input
           ref={divRef}
           disabled
+          required
           style={{
             border: '1px solid #8678F9',
             opacity,
