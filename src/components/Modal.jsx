@@ -3,7 +3,7 @@ import { ContactUs } from './ContactForm/ContactUs';
 
 export const Modal = ({ closeModal }) => {
   return (
-    <div className="fixed inset-0 h-screen flex items-center justify-center z-50 bg-black/95 animation-modal">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/95 animation-modal">
       <div className="flex flex-col gap-2 p-5 m-4 rounded-lg bg-gradient-to-r from-black/80 to-slate-950/80 border border-[#ff5757]/30 max-w-5xl md:p-10">
         <button
             className='text-end text-2xl font-bold mb-3'
