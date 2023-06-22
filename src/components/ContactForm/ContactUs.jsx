@@ -12,7 +12,7 @@ export const ContactUs = () => {
     setButtonMessage("Enviando...");
     setTimeout(() => {
       setButtonMessage("Entrar em Contato");
-    }, 3000);
+    }, 2700);
   };
 
   const sendEmail = (e) => {
@@ -55,31 +55,40 @@ export const ContactUs = () => {
         action=""
         className="flex flex-col items-center justify-center w-full gap-2"
         ref={form}
+        onSubmit={sendEmail}
       >
         <InputSpotlightBorder
           placeholder="E-mail para contato"
           type="email"
           name="email"
+          required
         />
         <InputSpotlightBorder
           placeholder="Número de telefone para contato"
           type="tel"
           name="tel"
+          required
         />
         <InputSpotlightBorder
           placeholder="Como podemos te chamar?"
           type="text"
           name="name"
+          required
         />
-      </form>
-      <button onClick={sendEmail} className="w-full">
-        <button className="w-full" onClick={changeMessage}>
-          <ButtonRotatingBackgroundGradient1
-            text={buttonMessage}
-            classCSS="relative inline-flex h-14 overflow-hidden rounded-xl p-[1px] w-4/5 m-auto"
-          />
+        <button onClick={sendEmail} className="w-full" type="submit">
+          <button className="w-full" onClick={changeMessage} type="submit">
+            <ButtonRotatingBackgroundGradient1
+              text={buttonMessage}
+              classCSS="relative inline-flex h-14 overflow-hidden rounded-xl p-[1px] w-4/5 m-auto"
+            />
+          </button>
         </button>
-      </button>
+      </form>
+      {showConfirmation && (
+        <div>
+          <p className="text-green-500 font-bold text-center">Email enviado com sucesso!</p>
+        </div>
+      )}
     </div>
   );
 };

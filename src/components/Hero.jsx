@@ -9,12 +9,13 @@ export const Hero = () => {
     const [openModal, setOpenModal] = useState(false);
 
     return (
-        <div className="text-white px-3 h-screen">
-            <div className="max-w-screen-2xl h-4/5 m-auto flex flex-col gap-12 justify-center items-center leading-relaxed">
-                <h1 className="text-[#fffaf4] text-5xl text-center max-w-6xl font-bold md:text-7xl hero_title">
+        <div className="text-white px-3 h-screen relative" style={{backgroundImage: "url('../../public/img/bg_01.png')", backgroundSize: "cover"}}>
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-90"></div>
+            <div className="max-w-7xl h-4/5 m-auto flex flex-col gap-12 justify-center items-center leading-relaxed relative z-10">
+                <h1 className="text-[#fffaf4] text-4xl text-center max-w-6xl font-bold md:text-6xl hero_title">
                     Criando soluções de <TextEffect1 text="Software"/> que estão anos-luz a frente.
                 </h1>
-                <h2 className="text-[#ff5757] text-center text-lg hero_subtitle md:text-2xl">
+                <h2 className="text-[#ff5757] text-center text-lg hero_subtitle md:text-xl">
                     Focados em transformar suas ideias em constelações de código.
                 </h2>
                 <div className="flex flex-col justify-center items-center gap-2 md:flex-row md:gap-10">

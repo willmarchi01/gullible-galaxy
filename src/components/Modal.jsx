@@ -1,4 +1,5 @@
 import '../styles/Theme.css'
+import { ContactForm } from './ContactForm/ContactForm';
 import { ContactUs } from './ContactForm/ContactUs';
 
 export const Modal = ({ closeModal }) => {
@@ -21,7 +22,7 @@ export const Modal = ({ closeModal }) => {
                     <span>Suporte ao Cliente 24/7</span>
                 </div>
             </div>
-            <ContactUs />
+            <ContactForm />
         </div>
       </div>
     </div>

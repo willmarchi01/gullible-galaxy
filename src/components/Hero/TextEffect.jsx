@@ -29,7 +29,7 @@ const TextEffect1 = (props) => {
   }, [])
 
   return (
-      <h1 className="text-[#ff5757] text-5xl font-bold relative inline-block md:text-7xl">
+      <h1 className="text-[#ff5757] text-4xl font-bold relative inline-block md:text-6xl">
         <span id="before-te1" className="absolute top-0 left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 #fff", clipPath: "rect(24px, 550px, 90px, 0)" }} aria-hidden="true">{props.text}</span> {/* glitch::before */}
         {props.text}
         <span id="after-te1" className="absolute top-0 -left-0.5 w-full h-full bg-transparent" style={{ textShadow: "-2px 0 spin(#fff, 180)", clipPath: "rect(85px, 550px, 140px, 0)" }} aria-hidden="true">{props.text}</span> {/* glitch::after */}

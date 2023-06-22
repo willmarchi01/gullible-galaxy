@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../..//styles/Theme.css";
 import { Menu } from "lucide-react";
+import { MenuMobile } from "./MenuMob";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export const Header = () => {
 
   return (
     <div className="text-[#fffaf4] px-5 py-3">
-      <header className="max-w-screen-2xl m-auto flex justify-between items-center h-1/5">
+      <header className="max-w-7xl m-auto flex justify-between items-center h-1/5">
         <a href="/">
           <img src="../../../public/img/nebuloz.svg" width={200} />
         </a>
@@ -29,11 +30,15 @@ export const Header = () => {
             Avaliações
           </a>
         </nav>
-        <div className="flex gap-1 items-center header_link text-xl uppercase font-bold md:hidden">
+        <div 
+          className="flex gap-1 items-center header_link text-xl uppercase font-bold md:hidden" 
+          onClick={() => {setIsMenuOpen(true)}}
+        >
           Menu
           <Menu />
         </div>
       </header>
+      {isMenuOpen && <MenuMobile closeMenu={setIsMenuOpen}/>}
     </div>
   );
 };
