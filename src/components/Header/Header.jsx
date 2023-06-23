@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <div className="text-[#fffaf4] px-5 py-3">
-      <header className="max-w-7xl m-auto flex justify-between items-center h-1/5">
+      <header className="max-w-7xl m-auto flex justify-between items-center">
         <a href="/">
           <img src="../../../public/img/nebuloz.svg" width={200} />
         </a>
