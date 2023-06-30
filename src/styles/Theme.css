@@ -43,3 +43,35 @@
   box-shadow: inset 110px 0 0 0 #FF5757;
   color: white;
 }
+
+.wave-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(to right, #ffffff 0%, #ffffff 50%, #f7f7f7 50%, #f7f7f7 100%);
+  background-size: 200% 100%;
+  animation: wave 2s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+

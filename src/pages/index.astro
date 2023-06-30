@@ -1,7 +1,9 @@
 ---
+import { AboutUs } from '../components/AboutUs';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header/Header';
 import { Hero } from '../components/Hero';
+import { Technologies } from '../components/Techs';
 import { TrustedBy } from '../components/Hero/TrustedBy';
 import { OurTeam } from '../components/OurTeam';
 import Layout from '../layouts/Layout.astro';
@@ -10,7 +12,8 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Home | Nebuloz">
 	<Header client:load/>
 	<Hero client:load/>
+	<AboutUs client:load/>
+	<Technologies client:load/>
 	<OurTeam client:load/>
-	<TrustedBy client:load/>
 	<Footer client:load/>
 </Layout>

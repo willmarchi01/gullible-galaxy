@@ -18,8 +18,12 @@ export const PersonTeam = (props) => {
           </h1>
           <p className="text-center font-semibold text-lg">{props.ocupation}</p>
           <div className="flex justify-center gap-3">
-            <Linkedin color="#181818" size={30} strokeWidth={1.5} />
-            <Twitter color="#181818" size={30} strokeWidth={1.5} />
+            <a href={props.linkedin} className="cursor-pointer" target="blank">
+              <Linkedin color="#181818" size={30} strokeWidth={1.5} />
+            </a>
+            <a href={props.twitter}>
+              <Twitter color="#181818" size={30} strokeWidth={1.5} />
+            </a>
           </div>
         </div>
       </div>

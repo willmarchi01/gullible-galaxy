@@ -2,8 +2,8 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="max-w-7xl m-auto text-[#fffaf4] hero_title py-10 px-3 ">
-      <div className="flex flex-col gap-5 w-full border-b-2 border-red-500/50 py-10 md:flex-row">
+    <footer className=" text-[#fffaf4] hero_title py-10 px-3 bg-[#181818]">
+      <div className="max-w-7xl m-auto flex flex-col gap-5 w-full border-b-2 border-red-500/50 py-10 md:flex-row">
         <div className="flex flex-col gap-3 text-center justify-center items-center w-full md:w-1/3 md:justify-start md:items-start md:text-start">
           <div className="flex flex-col">
             <a
