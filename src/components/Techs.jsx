@@ -6,11 +6,11 @@ export const Technologies = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-8">
         <div className="mb-8 md:mb-12">
           <h2 className="mb-4 text-center text-2xl font-bold text-[#fffaf4] md:mb-6 lg:text-3xl">
-            Algumas tecnologias que usamos
+            Algumas tecnologias que utilizamos na <span className='text-[#ff5757]'>Nebuloz</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-10 lg:gap-2">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-5 lg:gap-2">
           <div className="w-full h-full flex justify-center items-center">
             <div className="w-20 h-20 overflow-hidden rounded-full bg-gray-200 shadow-lg flex justify-center items-center transition-colors">
               <img
