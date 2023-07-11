@@ -3,7 +3,7 @@ import { PersonTeam } from "./OurTeam/PersonTeam"
 
 export const OurTeam = (props)  => {
     return (
-        <div className="text-[#181818] bg-[#fffaf4]">
+        <div className="text-[#181818] bg-[#fffaf4]" id="team">
             <div className="max-w-7xl m-auto px-3 py-10 flex flex-col gap-10">
                 <div className="flex flex-col gap-5 justify-center items-center">
                     <h1 className="text-4xl font-bold text-center">Conheça o nosso Time</h1>

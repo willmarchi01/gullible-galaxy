@@ -7,6 +7,7 @@ import { Technologies } from '../components/Techs';
 import { TrustedBy } from '../components/Hero/TrustedBy';
 import { OurTeam } from '../components/OurTeam';
 import Layout from '../layouts/Layout.astro';
+import { Advantages } from '../components/Advantages';
 ---
 
 <Layout title="Home | Nebuloz">
@@ -15,5 +16,6 @@ import Layout from '../layouts/Layout.astro';
 	<AboutUs client:load/>
 	<Technologies client:load/>
 	<OurTeam client:load/>
+	<Advantages client:load/>
 	<Footer client:load/>
 </Layout>

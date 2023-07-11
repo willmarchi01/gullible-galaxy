@@ -23,11 +23,11 @@ export const Header = () => {
           <a href="" className="header_link">
             Sobre Nós
           </a>
-          <a href="" className="header_link">
-            Projetos
+          <a href="#techs" className="header_link">
+            Tecnologias
           </a>
-          <a href="" className="header_link">
-            Avaliações
+          <a href="#team" className="header_link">
+            Nosso Time
           </a>
         </nav>
         <div 
