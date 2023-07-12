@@ -18,18 +18,14 @@ export const Footer = () => {
             </a>
           </div>
           <div className="flex gap-3">
-            <a href="">
+            <a href="https://www.instagram.com/nebulozltda/" target="blank">
               <Instagram />
             </a>
-            <a href="">
-              <Facebook />
-            </a>
-            <a href="">
-              <Twitter />
-            </a>
-            <a href="">
-              <Linkedin />
-            </a>
+          </div>
+          <div className="flex flex-col">
+            <a href="mailto:nebulozltda@gmail.com" className="hover:text-[#ff5757] transition-colors">nebulozltda@gmail.com</a>
+            <a href="tel:+5567992825111" className="hover:text-[#ff5757] transition-colors">(67) 9 9282-5111</a>
+            <a href="tel:+5562999078095" className="hover:text-[#ff5757] transition-colors">(62) 9 9907-8095</a>
           </div>
         </div>
         <div className="w-full grid grid-cols-2 justify-center text-center gap-3 items-center font-bold text-xl md:w-2/3 md:flex md:justify-around">

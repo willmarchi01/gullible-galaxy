@@ -1,6 +1,6 @@
 export const AboutUs = () => {
   return (
-    <div className="bg-[#fffaf4] flex px-3">
+    <div className="bg-[#fffaf4] flex px-3" id="class-about-us">
       <div className="max-w-7xl m-auto flex h-screen">
         <div className="text-center flex flex-col justify-center gap-5 text-[#181818] md:text-start">
           <h1 className="text-5xl font-bold">prazer em conhecer você!</h1>

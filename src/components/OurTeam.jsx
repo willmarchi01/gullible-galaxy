@@ -16,6 +16,7 @@ export const OurTeam = (props)  => {
                         name="Willian Marchi"
                         ocupation="Co-Fundador | CEO"
                         linkedin="https://www.linkedin.com/in/willianmarchi01/"
+                        instagram="https://www.instagram.com/_willmarchi/"
                     />
                     <PersonTeam 
                         personimg="https://i.ibb.co/dbQzFGh/1653520085565.jpg"

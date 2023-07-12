@@ -1,4 +1,4 @@
-import { Linkedin, Twitter } from "lucide-react"
+import { Instagram, Linkedin, Twitter } from "lucide-react"
 
 export const PersonTeam = (props) => {
   return (
@@ -21,8 +21,8 @@ export const PersonTeam = (props) => {
             <a href={props.linkedin} className="cursor-pointer" target="blank">
               <Linkedin color="#181818" size={30} strokeWidth={1.5} />
             </a>
-            <a href={props.twitter}>
-              <Twitter color="#181818" size={30} strokeWidth={1.5} />
+            <a href={props.instagram} className="cursor-pointer" target="blank">
+              <Instagram color="#181818" size={30} strokeWidth={1.5} />
             </a>
           </div>
         </div>

@@ -20,7 +20,7 @@ export const Header = () => {
           <a href="" className="header_link">
             Início
           </a>
-          <a href="" className="header_link">
+          <a href="#class-about-us" className="header_link">
             Sobre Nós
           </a>
           <a href="#techs" className="header_link">
